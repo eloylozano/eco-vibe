@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+    --black: #1a1a1a;
     --dark-green: #002c0d;
     --medium-green: #00581b;
     --light-green: #2dab04;
@@ -15,8 +16,13 @@
     font-family: "Roboto", serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    background-image: url("img/Wallpaper.png");
+    background-image: url("img/Wallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +33,7 @@ header img {
     height: 50px;
 }
 
-nav{
+nav {
     width: 100%;
 }
 
@@ -41,7 +47,7 @@ nav{
     color: var(--dark-green);
 }
 
-nav div button{
+nav div button {
     width: 150px;
 }
 
@@ -50,11 +56,15 @@ nav div button{
 }
 
 #home h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
     color: var(--lime-green);
 }
 
 #home h1 span {
     color: var(--dark-green);
+}
+
+#home p {
+    color: var(--medium-green);
 }
