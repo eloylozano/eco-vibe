@@ -44,6 +44,35 @@ header img {
 
 nav {
     width: 100%;
+
+
+    & .nav-link {
+        position: relative;
+        padding: 10px;
+        color: var(--black);
+        transition: color 0.3s ease;
+    }
+
+    & .nav-link:hover {
+        color: var(--lime-green);
+    }
+
+    & .nav-link.active {
+        color: var(--lime-green);
+        font-weight: bold;
+    }
+
+    & .nav-link.active::before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--lime-green);
+        border-radius: 0 0 5px 5px;
+    }
+
 }
 
 .brand-text {
@@ -64,6 +93,7 @@ nav {
 .btn:hover {
     background-color: #96bf00a1;
     border: 1px solid #96bf00d3;
+    color: var(--light-green);
 }
 
 #home {
@@ -75,7 +105,6 @@ nav {
 #home h1 {
     font-size: 4em;
     font-weight: 700;
-    color: var(--lime-green);
 }
 
 #home h1 span {
@@ -238,23 +267,30 @@ nav {
 }
 
 #about {
-    width: 70%;
-    text-align: justify;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
-    & h2 {
-        font-weight: 900;
-        font-size: 3em;
-        color: var(--lime-green);
+    & article {
+        width: 70%;
+
+        & h2 {
+            font-weight: 900;
+            color: var(--lime-green);
+        }
+
+        & span {
+            color: var(--dark-green);
+        }
+
     }
 
-    & span {
-        color: var(--dark-green);
-    }
 }
 
 #approach {
-    margin-top: 600px;
-    height: 450vh;
+    height: 350vh;
 
     & h2 {
         font-weight: 900;
@@ -276,29 +312,38 @@ nav {
 
 
     & .card {
-        padding: 30px 0;
+        padding-bottom: 30px;
         width: 350px;
         gap: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        border-radius: 20px;
-        background-color: #0267ff2f;
+        color: white;
+        background-color: var(--medium-blue);
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
     }
 
-    & .card h3 {
-        color: var(--dark-blue);
-        font-weight: 500;
+    & .card:hover {
+        transform: scale(1.01);
     }
 
     & .card img {
-        height: 300px;
-        width: 300px;
-        border-radius: 5px;
+        width: 100%;
+        overflow-y: hidden;
     }
 
-    & .card p{
+    & .card h3 {
+        color: #87ceeb;
+        font-weight: 500;
+    }
+
+
+    & .card p {
         width: 100%;
+        margin: 0;
     }
 }
