@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --black: #1a1a1a;
+    --black: #252525;
     --dark-green: #002c0d;
     --medium-green: #00581b;
     --light-green: #2dab04;
     --lime-green: #95bf00;
+
+    /* Colores azules complementarios */
+    --dark-blue: #002b5c;
+    --medium-blue: #005b96;
+    --light-blue: #2daaff;
+    --sky-blue: #87ceeb;
+    --cyan-blue: #00bcd4;
 }
+
 
 
 * {
@@ -24,10 +32,10 @@ body {
     background-image: url("../img/fullWallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 header img {
@@ -229,38 +237,68 @@ nav {
     fill: #fec195;
 }
 
+#about {
+    width: 70%;
+    text-align: justify;
+
+    & h2 {
+        font-weight: 900;
+        font-size: 3em;
+        color: var(--lime-green);
+    }
+
+    & span {
+        color: var(--dark-green);
+    }
+}
+
 #approach {
-    height: 480vh;
-    padding-top: 750px;
+    margin-top: 600px;
+    height: 450vh;
+
+    & h2 {
+        font-weight: 900;
+        font-size: 3em;
+        color: var(--medium-blue);
+    }
+
+    & p {
+        width: 75%;
+    }
 }
 
 .cards-container {
+    padding-top: 50px;
+    width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     gap: 45px;
-}
 
-.card {
-    width: 350px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #96bf0073 ;
-    border-radius: 30px;
-    padding: 40px 30px 20px;
-    backdrop-filter: blur(2px);
-    background-color: #96bf002f;
-}
 
-.card h2 {
-    color: var(--medium-green);
-    text-align: center;
-    font-weight: 500;
-}
+    & .card {
+        padding: 30px 0;
+        width: 350px;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #0267ff2f;
+    }
 
-.card img {
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+    & .card h3 {
+        color: var(--dark-blue);
+        font-weight: 500;
+    }
+
+    & .card img {
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    & .card p{
+        width: 100%;
+    }
 }
