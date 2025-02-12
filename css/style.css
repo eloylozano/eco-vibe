@@ -305,8 +305,8 @@ nav {
     & .card {
         width: 350px;
         gap: 15px;
-        color: white;
-        background-color: var(--medium-blue);
+        color: var(--black);
+        background-color: #fff;
         border: none;
         cursor: pointer;
         transition: 0.3s ease-in-out;
@@ -322,7 +322,7 @@ nav {
     }
 
     & .card h3 {
-        color: #87ceeb;
+        color: var(--black);
         font-weight: 500;
     }
 
