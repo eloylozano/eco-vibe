@@ -94,7 +94,7 @@ nav {
 .btn:hover {
     background-color: #96bf00a1;
     border: 1px solid #96bf00d3;
-    color: var(--light-green);
+    color: white;
 }
 
 #home {
@@ -339,7 +339,7 @@ nav {
 
     & h2 {
         font-weight: 600;
-        color:white;
+        color: white;
         text-align: center;
         margin-bottom: 100px;
     }
