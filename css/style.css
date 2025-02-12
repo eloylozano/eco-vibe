@@ -113,6 +113,7 @@ nav {
 /* From Uiverse.io by MuhammadHasann */
 #approach-btn {
     position: relative;
+    width: 200px;
     padding: 12px 35px;
     background: #95bf00;
     font-size: 17px;
