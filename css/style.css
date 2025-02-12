@@ -431,6 +431,7 @@ nav {
         display: flex;
         justify-content: space-between;
         width: 65%;
+        height: 500px;
 
 
         .collab-join {
