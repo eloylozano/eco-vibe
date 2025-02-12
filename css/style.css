@@ -28,6 +28,11 @@ a {
     color: inherit;
 }
 
+h2 {
+    font-size: 3em;
+
+}
+
 body {
     background-image: url("../img/fullWallpaper.jpg");
     background-size: cover;
@@ -100,7 +105,7 @@ nav {
     color: var(--lime-green);
     font-size: 4em;
     font-weight: 700;
-    
+
     & span {
         color: var(--dark-green);
     }
@@ -282,10 +287,10 @@ nav {
 }
 
 #approach {
-    height: 350vh;
 
     & h2 {
         font-weight: 900;
+        color: white;
         color: var(--medium-blue);
     }
 
@@ -325,5 +330,43 @@ nav {
     & .card p {
         width: 100%;
         margin: 0;
+    }
+}
+
+#stats {
+    padding: 200px 0;
+    height: 300vh;
+
+    & h2 {
+        font-weight: 600;
+        color:white;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .impact-stats {
+        display: flex;
+        justify-content: end;
+
+        & .stats {
+            width: 70%;
+            display: flex;
+            text-align: center;
+            margin-bottom: 20px;
+
+            & h3 {
+                font-size: 3.5em;
+                color: var(--dark-blue);
+                font-weight: 900;
+            }
+
+            & p {
+                color: var(--dark-blue);
+                font-size: 2em;
+                font-weight: 400;
+            }
+        }
+
+
     }
 }
