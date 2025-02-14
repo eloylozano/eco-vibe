@@ -34,3 +34,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     counters.forEach(counter => observer.observe(counter));
 });
+
+
+  const cardsPerPage = 6; // Número de tarjetas por página
+  const cards = document.querySelectorAll('.card'); // Seleccionar todas las tarjetas
+  const paginationLinks = document.querySelectorAll('.page-link'); // Seleccionar los números de la paginación
+
+  // Función para mostrar las tarjetas de la página seleccionada
+  function showPage(pageNumber) {
+    const startIndex = (pageNumber - 1) * cardsPerPage; // Índice de inicio
+    const endIndex = startIndex + cardsPerPage; // Índice final
+
+    // Iterar sobre las tarjetas y actualizar visibilidad
+    cards.forEach((card, index) => {
+      card.style.display = index >= startIndex && index < endIndex ? 'block' : 'none';
+    });
+
+    // Actualizar estilos de los enlaces de paginación
+    paginationLinks.forEach((link, index) => {
+      link.parentElement.classList.toggle('active', index === pageNumber - 1); // Marcar página activa
+    });
+  }
+
+  // Agregar eventos de clic a los números de paginación
+  paginationLinks.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Evitar comportamiento por defecto
+      showPage(index + 1); // Mostrar la página correspondiente
+    });
+  });
+
+  // Mostrar la primera página al cargar
+  showPage(1);
+
+
