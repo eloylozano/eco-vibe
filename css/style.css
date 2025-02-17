@@ -631,7 +631,6 @@ nav {
         width: 600px;
         color: var(--black);
 
-
         label {
             font-size: 1.3em;
             font-weight: 400;
@@ -645,7 +644,22 @@ nav {
 
         textarea {
             resize: none;
-            height: 300px;
+            height: 200px;
+        }
+
+        .btn-container {
+            width: 100%;
+
+
+            button {
+                border: none;
+                background-color: var(--lime-green);
+                transition: 0.3s ease;
+            }
+
+            button:hover {
+                background-color: var(--medium-green);
+            }
         }
 
     }
@@ -655,7 +669,7 @@ nav {
 }
 
 footer {
-    background-color: var(--black);
+    background-color: var(--dark-green);
     color: #fff;
     text-align: center;
 
@@ -702,10 +716,30 @@ footer {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
+        position: relative;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .footer-menu a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--lime-green);
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer-menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 
     .footer-menu a:hover {
-        text-decoration: underline;
+        color: var(--lime-green);
     }
 
     .description {
