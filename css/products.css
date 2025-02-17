@@ -150,7 +150,7 @@ nav {
     position: absolute;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     top: 0;
@@ -195,13 +195,91 @@ nav {
 }
 
 .button__cart {
-    background-color: var(--medium-green);
+    background-color: var(--lime-green);
     border-radius: 10%;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin-top: 5px;
     border: none;
+    transition: 0.3s ease;
 }
+
+.button__cart:hover {
+    background-color: var(--dark-green);
+}
+
+.pagination {
+    .page-item {
+
+        .page-link:focus {
+
+            background-color: var(--lime-green);
+            color: white;
+        }
+    }
+}
+
+/* CSS para filtros estilo PCComponentes */
+.filters {
+    width: 250px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #34495e;
+}
+
+input[type="checkbox"] {
+    accent-color: #27ae60;
+    margin-right: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.apply-filters {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.apply-filters:hover {
+    background-color: #2ecc71;
+}
+
 
 
 footer {

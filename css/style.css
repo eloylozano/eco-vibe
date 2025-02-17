@@ -427,9 +427,9 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 65%;
-        height: 600px;
 
+
+        height: 600px;
         .collab-join {
             display: flex;
             width: 60%;
@@ -614,7 +614,7 @@ nav {
 
 }
 
-#contact {
+#contacto {
     padding: 50px 0;
     color: white;
     display: flex;
@@ -656,6 +656,7 @@ nav {
                 border: none;
                 background-color: var(--lime-green);
                 transition: 0.3s ease;
+                padding: 10px 0;
             }
 
             button:hover {

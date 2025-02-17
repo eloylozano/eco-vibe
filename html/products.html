@@ -27,12 +27,23 @@
                 <li class="nav-item"><a href="../index.html" class="nav-link text-dark ">Inicio</a></li>
                 <li class="nav-item"><a href="./products.html" class="nav-link text-dark active">Productos</a></li>
                 <li class="nav-item"><a href="./categories.html" class="nav-link text-dark">Categorías</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Contacto</a></li>
+                <li class="nav-item"><a href="../index.html#contacto" class="nav-link text-dark">Contacto</a></li>
             </ul>
 
             <div class="d-flex gap-3">
+
                 <button class="btn btn-success rounded-pill">Registro</button>
                 <button class="btn btn-outline-success rounded-pill">Login</button>
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 512 512">
+                    <circle cx="176" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="32" />
+                    <circle cx="400" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="32" />
+                    <path fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                        d="M48 80h64l48 272h256" />
+                    <path fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                        d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128" />
+                </svg>
             </div>
         </nav>
     </header>
@@ -42,179 +53,227 @@
             <h1>Conoce Nuestros<br><span id="banner-outro">EcoProductos 🪴</span></h1>
         </section>
 
+        <div class="ps-5 d-flex justify-content-between">
+            <aside id="filters" class="filters">
+                <h4 class="text-center pb-4">Filtros</h4>
 
-        <section id="cards" class="cards-container pt-5">
-
-            <section id="card3" class="card">
-                <img src="/img/Libreta.png" alt="Libreta ecológica">
-                <div class="card__content">
-                    <p class="card__title">Libreta ecológica</p>
-                    <p class="card__price">
-                        8,90€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                <!-- Ordenar por -->
+                <div class="filter-section">
+                    <h3>Ordenar por</h3>
+                    <select name="sort" id="sort">
+                        <option value="price-asc">Precio: Menor a Mayor</option>
+                        <option value="price-desc">Precio: Mayor a Menor</option>
+                        <option value="newest">Novedades</option>
+                        <option value="popularity">Más populares</option>
+                    </select>
                 </div>
-            </section>
 
-
-            <section id="card5" class="card">
-                <img src="/img/Velas.png" alt="Velas aromáticas ecológicas">
-                <div class="card__content">
-                    <p class="card__title">Velas aromáticas ecológicas</p>
-                    <p class="card__price">
-                        12,50€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                <!-- Filtrar por Precio -->
+                <div class="filter-section">
+                    <h3>Precio</h3>
+                    <label for="min-price">Mínimo</label>
+                    <input type="number" id="min-price" name="min-price" placeholder="0">
+                    <label for="max-price">Máximo</label>
+                    <input type="number" id="max-price" name="max-price" placeholder="100">
                 </div>
-            </section>
 
-            <section id="card6" class="card">
-                <img src="/img/Botella.png" alt="Botella ecológica">
-                <div class="card__content">
-                    <p class="card__title">Botella ecológica</p>
-                    <p class="card__price">
-                        14,30€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                <!-- Filtrar por Color -->
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <label><input type="checkbox" name="color" value="verde"> Verde</label>
+                    <label><input type="checkbox" name="color" value="blanco"> Blanco</label>
+                    <label><input type="checkbox" name="color" value="madera"> Madera</label>
+                    <label><input type="checkbox" name="color" value="negro"> Negro</label>
                 </div>
-            </section>
 
-            <section id="card7" class="card">
-                <img src="/img/ToteBag.png" alt="Tote Bag ecológica">
-                <div class="card__content">
-                    <p class="card__title">Tote Bag ecológica</p>
-                    <p class="card__price">
-                        10,00€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                <!-- Filtrar por Categoría -->
+                <div class="filter-section">
+                    <h3>Categoría</h3>
+                    <label><input type="checkbox" name="category" value="decoracion"> Decoración</label>
+                    <label><input type="checkbox" name="category" value="papeleria"> Papelería</label>
+                    <label><input type="checkbox" name="category" value="ropa"> Ropa</label>
+                    <label><input type="checkbox" name="category" value="accesorios"> Accesorios</label>
                 </div>
+
+                <!-- Botón de aplicar -->
+                <button type="button" class="apply-filters">Aplicar Filtros</button>
+            </aside>
+
+            <section id="cards" class="cards-container pt-5">
+
+                <section id="card3" class="card">
+                    <img src="/img/Libreta.png" alt="Libreta ecológica">
+                    <div class="card__content">
+                        <p class="card__title">Libreta ecológica</p>
+                        <p class="card__price">
+                            8,90€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card5" class="card">
+                    <img src="/img/Velas.png" alt="Velas aromáticas ecológicas">
+                    <div class="card__content">
+                        <p class="card__title">Velas aromáticas ecológicas</p>
+                        <p class="card__price">
+                            12,50€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card6" class="card">
+                    <img src="/img/Botella.png" alt="Botella ecológica">
+                    <div class="card__content">
+                        <p class="card__title">Botella ecológica</p>
+                        <p class="card__price">
+                            14,30€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card7" class="card">
+                    <img src="/img/ToteBag.png" alt="Tote Bag ecológica">
+                    <div class="card__content">
+                        <p class="card__title">Tote Bag ecológica</p>
+                        <p class="card__price">
+                            10,00€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card8" class="card">
+                    <img src="/img/tuper.png" alt="Tupper ecológico">
+                    <div class="card__content">
+                        <p class="card__title">Tupper ecológico</p>
+                        <p class="card__price">
+                            13,40€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card12" class="card">
+                    <img src="/img/boli.png" alt="Bolígrafo de bambú">
+                    <div class="card__content">
+                        <p class="card__title">Bolígrafo de bambú</p>
+                        <p class="card__price">
+                            13,40€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card10" class="card">
+                    <img src="/img/plato.png" alt="Plato reciclado">
+                    <div class="card__content">
+                        <p class="card__title">Plato reciclado</p>
+                        <p class="card__price">
+                            1,99€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card1" class="card">
+                    <img src="/img/Servilleta.png" alt="Servilletas ecológicas">
+                    <div class="card__content">
+                        <p class="card__title">Servilletas ecológicas</p>
+                        <p class="card__price">
+                            3,90€
+                        </p>
+                        <button class="button__cart rounded-pill rounded-pill">Añadir <i
+                                class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card1" class="card">
+                    <img src="/img/vaso-cafe.jpg" alt="Vaso de café ecológico">
+                    <div class="card__content">
+                        <p class="card__title">Vaso de café ecológico</p>
+                        <p class="card__price">
+                            2,50€
+                        </p>
+                        <button class="button__cart rounded-pill rounded-pill">Añadir <i
+                                class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card2" class="card">
+                    <img src="/img/sudadera-ecologica.png" alt="Sudadera ecológica">
+                    <div class="card__content">
+                        <p class="card__title">Sudadera ecológica</p>
+                        <p class="card__price">
+                            22,00€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card4" class="card">
+                    <img src="/img/PowerBank.png" alt="PowerBank ecológico">
+                    <div class="card__content">
+                        <p class="card__title">PowerBank ecológico</p>
+                        <p class="card__price">
+                            19,99€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card12" class="card">
+                    <img src="/img/toalla.png" alt="Toallas Ecofriendly">
+                    <div class="card__content">
+                        <p class="card__title">Toallas Ecofriendly</p>
+                        <p class="card__price">
+                            33,90€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+                <section id="card12" class="card">
+                    <img src="/img/mousepad.png" alt="Mousepad Ecofriendly">
+                    <div class="card__content">
+                        <p class="card__title">Mousepad</p>
+                        <p class="card__price">
+                            11,10€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+
+                <section id="card9" class="card">
+                    <img src="/img/palillos.png" alt="Palillos de bambú">
+                    <div class="card__content">
+                        <p class="card__title">Palillos de bambú</p>
+                        <p class="card__price">
+                            7,20€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
+
+                <section id="card12" class="card">
+                    <img src="/img/cuboBasura.png" alt="Cubo reciclaje">
+                    <div class="card__content">
+                        <p class="card__title">Cubo de reciclaje</p>
+                        <p class="card__price">
+                            23,45€
+                        </p>
+                        <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
+                    </div>
+                </section>
             </section>
-
-
-            <section id="card8" class="card">
-                <img src="/img/tuper.png" alt="Tupper ecológico">
-                <div class="card__content">
-                    <p class="card__title">Tupper ecológico</p>
-                    <p class="card__price">
-                        13,40€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-
-            <section id="card12" class="card">
-                <img src="/img/boli.png" alt="Bolígrafo de bambú">
-                <div class="card__content">
-                    <p class="card__title">Bolígrafo de bambú</p>
-                    <p class="card__price">
-                        13,40€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-            <section id="card10" class="card">
-                <img src="/img/plato.png" alt="Plato reciclado">
-                <div class="card__content">
-                    <p class="card__title">Plato reciclado</p>
-                    <p class="card__price">
-                        1,99€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-            <section id="card1" class="card">
-                <img src="/img/Servilleta.png" alt="Servilletas ecológicas">
-                <div class="card__content">
-                    <p class="card__title">Servilletas ecológicas</p>
-                    <p class="card__price">
-                        3,90€
-                    </p>
-                    <button class="button__cart rounded-pill rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-
-            <section id="card1" class="card">
-                <img src="/img/vaso-cafe.jpg" alt="Vaso de café ecológico">
-                <div class="card__content">
-                    <p class="card__title">Vaso de café ecológico</p>
-                    <p class="card__price">
-                        2,50€
-                    </p>
-                    <button class="button__cart rounded-pill rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-            <section id="card2" class="card">
-                <img src="/img/sudadera-ecologica.png" alt="Sudadera ecológica">
-                <div class="card__content">
-                    <p class="card__title">Sudadera ecológica</p>
-                    <p class="card__price">
-                        22,00€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-
-            <section id="card4" class="card">
-                <img src="/img/PowerBank.png" alt="PowerBank ecológico">
-                <div class="card__content">
-                    <p class="card__title">PowerBank ecológico</p>
-                    <p class="card__price">
-                        19,99€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-            <section id="card12" class="card">
-                <img src="/img/toalla.png" alt="Toallas Ecofriendly">
-                <div class="card__content">
-                    <p class="card__title">Toallas Ecofriendly</p>
-                    <p class="card__price">
-                        33,90€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-            <section id="card12" class="card">
-                <img src="/img/mousepad.png" alt="Mousepad Ecofriendly">
-                <div class="card__content">
-                    <p class="card__title">Mousepad</p>
-                    <p class="card__price">
-                        11,10€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-
-            <section id="card9" class="card">
-                <img src="/img/palillos.png" alt="Palillos de bambú">
-                <div class="card__content">
-                    <p class="card__title">Palillos de bambú</p>
-                    <p class="card__price">
-                        7,20€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-
-            <section id="card12" class="card">
-                <img src="/img/cuboBasura.png" alt="Cubo reciclaje">
-                <div class="card__content">
-                    <p class="card__title">Cubo de reciclaje</p>
-                    <p class="card__price">
-                        23,45€
-                    </p>
-                    <button class="button__cart rounded-pill">Añadir <i class="bi bi-cart"></i></button>
-                </div>
-            </section>
-        </section>
+        </div>
 
 
         <section>
