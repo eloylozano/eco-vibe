@@ -72,9 +72,7 @@ nav {
         background-color: var(--lime-green);
         border-radius: 0 0 5px 5px;
     }
-
 }
-
 
 .brand-text {
     font-weight: 900;
@@ -87,7 +85,6 @@ nav {
 
 .btn {
     width: 150px;
-
 }
 
 .btn:hover {
@@ -95,7 +92,6 @@ nav {
     border: 1px solid #96bf00d3;
     color: white;
 }
-
 
 #banner {
     margin-top: 20px;
@@ -106,6 +102,10 @@ nav {
     & #banner-outro {
         color: var(--medium-green);
     }
+}
+
+main>div {
+    padding: 0 5em;
 }
 
 #products {
@@ -159,6 +159,7 @@ nav {
 
 
 .pagination {
+    padding-left: 10em;
 
     .page-item {
         .page-link {
@@ -410,4 +411,97 @@ footer {
     .cards-container {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 1100px) {
+
+
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .d-md-flex {
+        display: none !important;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 1068px) {
+    #home {
+        justify-content: start;
+        padding: 5em 2em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    main>div {
+        padding: 0 0;
+    }
+
+    #filters {
+        display: none;
+    }
+
+    .products {
+        width: fit-content;
+    }
+
+    .pagination {
+        width: min-content;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        .social {
+            height: 100%;
+
+            .social ul {
+                height: 100%;
+            }
+
+        }
+
+        .footer-menu ul {
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px;
+            margin: 5px 0;
+        }
+
+        .description {
+            font-size: 0.8em;
+            height: 75px;
+        }
+    }
+
+
 }
