@@ -123,7 +123,7 @@ nav {
         width: 300px;
         cursor: pointer;
         overflow: hidden;
-        margin: 0 auto  ;
+        margin: 0 auto;
 
         .card-img-top {
             height: 100%;
@@ -159,7 +159,7 @@ nav {
 
 
 .pagination {
-    
+
     .page-item {
         .page-link {
             background-color: var(--lime-green);
@@ -229,12 +229,21 @@ label {
     color: #34495e;
 }
 
-input[type="checkbox"] {
-    accent-color: #27ae60;
+.filter-section label input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #949494;
+    border-radius: 4px;
     margin-right: 8px;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.filter-section label input[type="checkbox"]:checked {
+    background-color: var(--lime-green, #27ae60);
+    border-color: var(--lime-green, #00581b);
+    box-shadow: inset 0 0 0 2px white;
 }
 
 .apply-filters {
@@ -253,11 +262,11 @@ input[type="checkbox"] {
 }
 
 .product {
-    h2{
+    h2 {
         color: #00581b;
     }
 
-    .img-container{
+    .img-container {
         overflow: hidden;
     }
 
@@ -279,7 +288,7 @@ input[type="checkbox"] {
     img {
         cursor: pointer;
     }
-    
+
     .price {
         font-size: 2.5em;
         font-weight: 900;
