@@ -15,8 +15,6 @@
     --cyan-blue: #00bcd4;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +28,6 @@ a {
 
 h2 {
     font-size: 3em;
-
 }
 
 body {
@@ -40,7 +37,6 @@ body {
     background-position: top;
     display: flex;
     flex-direction: column;
-
 }
 
 header img {
@@ -75,7 +71,6 @@ nav {
         background-color: var(--lime-green);
         border-radius: 0 0 5px 5px;
     }
-
 }
 
 .brand-text {
@@ -99,6 +94,8 @@ nav {
 
 #home {
     height: 95vh;
+    justify-content: center;
+    padding: 0 3em;
 }
 
 #home h1 {
@@ -115,7 +112,6 @@ nav {
     color: var(--medium-green);
 }
 
-/* From Uiverse.io by MuhammadHasann */
 #approach-btn {
     position: relative;
     width: 200px;
@@ -268,7 +264,7 @@ nav {
 }
 
 #about {
-    height: 80vh;
+    margin-bottom: 500px;
 
     & article {
         width: 70%;
@@ -302,7 +298,6 @@ nav {
 .cards-container {
     width: 100%;
 
-    /* From Uiverse.io by gharsh11032000 */
     .card {
         cursor: pointer;
         position: relative;
@@ -424,25 +419,17 @@ nav {
     }
 
     .collab-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        margin: 0 auto;
+        gap: 150px;
 
-
-        height: 600px;
         .collab-join {
             display: flex;
-            width: 60%;
             flex-direction: column;
             justify-content: space-between;
             align-items: start;
 
             h4 {
                 text-align: center;
-            }
-
-            p {
-                width: 70%;
             }
         }
 
@@ -518,17 +505,17 @@ nav {
 
     }
 
-    /* From Uiverse.io by alexruix */
     .card {
-        overflow: visible;
-        position: relative;
-        width: 400px;
-        height: 500px;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        max-height: 450px;
         border-radius: 20px;
         background: #fff;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
-        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
     }
+
 
     .card:before,
     .card:after {
@@ -629,8 +616,8 @@ nav {
         background-color: white;
         padding: 50px;
         border-radius: 20px;
-        width: 600px;
         color: var(--black);
+        width: 500px;
 
         label {
             font-size: 1.3em;
@@ -680,27 +667,28 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
 
-    .social ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 0;
-        padding: 20px 0;
-    }
 
-    .social svg {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-    }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0;
+            padding: 20px 0;
+        }
 
-    .social svg:hover {
-        transform: scale(1.1);
+        svg {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        svg:hover {
+            transform: scale(1.1);
+        }
     }
 
     .footer-menu ul {
@@ -761,6 +749,130 @@ footer {
 
         i {
             margin: 0px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        justify-content: start;
+        padding: 5em 2em 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    #about {
+        padding: 0 2em;
+
+
+        article {
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    #approach {
+
+
+        p {
+            text-align: justify;
+            width: 100%;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .card {
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.8rem;
+
+        h3 {
+            text-align: center;
+        }
+
+    }
+
+    .collab-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0em;
+
+    }
+
+    .collab-join {
+        width: 100%;
+        margin: 10px 0;
+        gap: 25px;
+
+        p {
+            text-align: justify;
+        }
+
+    }
+
+
+    .card {
+        height: 350px;
+    }
+
+    #contacto {
+
+        .contact-form {
+            width: max-content;
+
+        }
+    }
+
+    footer {
+        .social {
+            height: 100%;
+
+            .social ul {
+                height: 100%;
+            }
+
+        }
+
+        .footer-menu ul {
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px;
+            margin: 5px 0;
+        }
+
+        .description {
+            font-size: 0.8em;
+            height: 75px;
         }
     }
 }

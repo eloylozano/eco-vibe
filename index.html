@@ -13,42 +13,35 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center px-5">
-        <nav class="d-flex align-items-center justify-content-between">
-
-            <a href="index.html">
-                <div class="d-flex gap-2">
-                    <img class="h-" src="/img/logo.png" alt="Logo">
-                    <span class="brand-text d-flex align-items-center fs-3"><span>Eco</span>Vibe</span>
-                </div>
+    <header class="d-flex justify-content-between align-items-center px-3 px-md-5">
+        <nav class="d-flex align-items-center justify-content-between flex-wrap">
+            <a href="../index.html" class="d-flex gap-2">
+                <img class="h-" src="/img/logo.png" alt="Logo" style="height: 50px;">
+                <span class="brand-text d-flex align-items-center fs-3"><span>Eco</span>Vibe</span>
             </a>
-
-            <ul class="nav d-flex gap-5">
-                <li class="nav-item"><a href="index.html" class="nav-link text-dark active">Inicio</a></li>
-                <li class="nav-item"><a href="./html/products.html" class="nav-link text-dark">Productos</a></li>
-                <li class="nav-item"><a href="./html/categories.html" class="nav-link text-dark">Categorías</a></li>
-                <li class="nav-item"><a href="index.html#contacto" class="nav-link text-dark">Contacto</a></li>
+    
+            <ul class="nav d-none d-md-flex gap-4">
+                <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Inicio</a></li>
+                <li class="nav-item"><a href="./products.html" class="nav-link text-dark active">Productos</a></li>
+                <li class="nav-item"><a href="./categories.html" class="nav-link text-dark">Categorías</a></li>
+                <li class="nav-item"><a href="../index.html#contacto" class="nav-link text-dark">Contacto</a></li>
             </ul>
-
-            <div class="d-flex gap-3">
-                <button class="btn btn-success rounded-pill">Registro</button>
-                <button class="btn btn-outline-success rounded-pill">Login</button>
-                <svg class="" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 512 512">
-                    <circle cx="176" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="32" />
-                    <circle cx="400" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="32" />
-                    <path fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-                        d="M48 80h64l48 272h256" />
-                    <path fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-                        d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128" />
+    
+            <div class="d-flex gap-2">
+                <button class="btn btn-success rounded-pill d-none d-md-block">Registro</button>
+                <button class="btn btn-outline-success rounded-pill d-none d-md-block">Login</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                    <circle cx="176" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-width="32"/>
+                    <circle cx="400" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-width="32"/>
+                    <path fill="none" stroke="#1a1a1a" stroke-width="32" d="M48 80h64l48 272h256"/>
+                    <path fill="none" stroke="#1a1a1a" stroke-width="32" d="M160 288h249.44l28.8-144H128"/>
                 </svg>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="d-flex flex-column text-start px-5 justify-content-center">
+        <section id="home" class="d-flex flex-column text-start ">
             <h1>La Esencia Verde,<br><span>Un Nuevo Comienzo</span></h1>
             <p class="fs-5 my-3">Creando conciencia ecológica a través de productos reciclados.</p>
             <div class="mt-4 py-fs-4">
@@ -132,7 +125,7 @@
             </div>
         </section>
 
-        <section id="about" class="p-5 d-flex flex-column text-center align-items-center">
+        <section id="about" class="d-flex flex-column text-center align-items-center">
             <article>
                 <h2 class="pb-3">¿Qué es <span>Eco</span>Vibe?</h2>
                 <p>EcoVibe es una organización comprometida con el impulso de la reutilización de materiales y la
@@ -195,15 +188,15 @@
                 <div class="stats d-flex justify-content-around">
                     <div>
                         <h3 class="counter" data-target="100000">0</h3>
-                        <p>Plástico reciclado (kg)</p>
+                        <p class="descrp">Plástico reciclado (kg)</p>
                     </div>
                     <div>
                         <h3 class="counter" data-target="15000">0</h3>
-                        <p>EcoProductos Vendidos</p>
+                        <p class="descrp">EcoProductos Vendidos</p>
                     </div>
                     <div>
                         <h3 class="counter" data-target="23">0</h3>
-                        <p>Proyectos ecológicos</p>
+                        <p class="descrp">Proyectos ecológicos</p>
                     </div>
                 </div>
             </div>
@@ -213,12 +206,11 @@
         <section id="collaboration" class="px-5">
             <h2 class="pt-5 text-center">Nuestros mejores colaboradores</h2>
 
-            <div class="collab-container p-5 flex justify-content-between">
+            <div class="collab-container d-flex justify-content-between pt-5">
 
-                <!-- From Uiverse.io by cssbuttons-io -->
                 <div class="collab-join">
                     <h4 class="fs-2">Forma parte de nuestro equipo</h4>
-                    <p class="fs-5">Si quieres pertenecer a esta gran familia puedes contactar en el botón que hay
+                    <p class="fs-5 collab-text">Si quieres pertenecer a esta gran familia puedes contactar en el botón que hay
                         debajo y
                         recibiremos encantados tu solicitud.</p>
                     <button class="c-button c-button--gooey"> Únete a nosotros
