@@ -617,7 +617,15 @@ nav {
         padding: 50px;
         border-radius: 20px;
         color: var(--black);
-        width: 500px;
+        width: 400px;
+
+        img {
+            border-radius: 15px;
+        }
+
+
+        form {
+        }
 
         label {
             font-size: 1.3em;
@@ -763,7 +771,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+
 
     .nav {
         flex-direction: column;
@@ -877,8 +885,16 @@ footer {
     #contacto {
 
         .contact-form {
-            width: max-content;
+            width: min-content;
+            flex-direction: column;
+        }
 
+        img {
+            width: 100%;
+        }
+
+        form {
+            width: fit-content;
         }
     }
 
