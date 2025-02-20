@@ -611,11 +611,11 @@ nav {
 
     .contact-form {
         background-color: white;
-        padding: 50px;
+        padding: 70px;
         border-radius: 20px;
         color: var(--black);
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -638,35 +638,32 @@ nav {
             font-weight: 700;
             text-align: center;
             color: var(--dark-blue);
+            width: 100%;
+            padding-bottom: 15px;
         }
 
-        form {
+        .contact-box {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            max-width: 400px;
+            justify-content: space-around;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 1.3em;
+            }
+
+            p {
+                width: max-content;
+                font-weight: 300;
+            }
         }
 
-        label {
-            font-size: 1.1em;
-            font-weight: 400;
-            margin-bottom: 5px;
-        }
 
-        input,
-        textarea {
-            padding: 10px;
-            font-size: 1em;
-            width: 100%;
-            max-width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        textarea {
-            resize: none;
-            height: 150px;
-        }
     }
 
     .btn-container {
