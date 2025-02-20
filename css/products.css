@@ -123,14 +123,18 @@ main>div {
         overflow: hidden;
         margin: 0 auto;
 
+        .img-container{
+            overflow: hidden;
+        }
+
         .card-img-top {
             height: 100%;
             border-radius: 0.75rem 0.75rem 0 0;
+            overflow: hidden;
             transition: 0.2s ease;
         }
 
         .card-img-top:hover {
-            overflow: hidden;
             transform: scale(1.3);
         }
 
