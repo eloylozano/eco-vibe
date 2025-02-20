@@ -157,7 +157,7 @@ main>div {
 
 
 .pagination {
-    padding-left: 10em;
+    /* padding-left: 10em; */
 
     .page-item {
         .page-link {
