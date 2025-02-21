@@ -103,6 +103,13 @@ main>div {
 
 .filter-section {
     margin-bottom: 20px;
+     
+    & h2{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
 }
 
 .filter-section h3 {
