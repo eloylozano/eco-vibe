@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".nav");
+  const hamburger = document.querySelector(".hamburger");
+
+  hamburger.addEventListener('click', () => {
+    if (window.innerWidth <= 1000) {  // Verifica si la pantalla es menor o igual a 1000px
+      nav.classList.toggle('active');  // Cambia la clase 'active' para mostrar u ocultar
+    }
+  });
+
+  // También puedes agregar un evento para cerrar el menú si el tamaño de la ventana cambia
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1000) {
+      nav.classList.remove('active');  // Elimina la clase activa si el tamaño es mayor a 1000px
+    }
+  });
+
+
   const counters = document.querySelectorAll(".counter");
 
   const animateCounter = (counter) => {
