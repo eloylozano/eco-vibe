@@ -16,19 +16,16 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center px-5">
-        <nav class="d-flex align-items-center justify-content-between">
-
-            <a href="../index.html">
-                <div class="d-flex gap-2">
-                    <img class="h-" src="/img/logo.png" alt="Logo">
-                    <span class="brand-text  fs-3"><span>Eco</span>Vibe</span>
-                </div>
+    <header class="d-flex justify-content-between align-items-center px-3 px-md-5">
+        <nav class="d-flex align-items-center justify-content-between flex-wrap">
+            <a href="../index.html" class="d-flex gap-2">
+                <img class="h-" src="/img/logo.webp" alt="Logo" style="height: 50px;">
+                <span class="brand-text fs-3"><span>Eco</span>Vibe</span>
             </a>
 
-            <ul class="nav gap-5">
-                <li class="nav-item"><a href="../index.html" class="nav-link text-dark ">Inicio</a></li>
-                <li class="nav-item"><a href="products.html" class="nav-link text-dark active">Productos</a></li>
+            <ul class="nav gap-4">
+                <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Inicio</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link text-dark active ">Productos</a></li>
                 <li class="nav-item"><a href="categories.html" class="nav-link text-dark">Categorías</a></li>
                 <li class="nav-item"><a href="../index.html#contacto" class="nav-link text-dark">Contacto</a></li>
             </ul>
@@ -58,42 +55,42 @@
 
     <main>
         <section class="container my-5 product">
-            <div class="row">
+            <div class="row product-info">
                 <!-- Imagen y Slider -->
                 <div class="col-md-6">
-
+    
                     <!-- Imagen principal -->
                     <div class="mt-3 img-container">
-                        <a href="/img/boli.png"><img id="mainImage" src="/img/boli.png" class="d-block w-100" alt="Imagen Principal"></a>
+                        <a href="/img/boli.png">
+                            <img id="mainImage" src="/img/boli.png" class="d-block w-100" alt="Imagen del Bolígrafo de Bambú" />
+                        </a>
                     </div>
+    
                     <div class="row mt-3 small-gallery">
                         <!-- Imágenes pequeñas -->
                         <div class="col-3">
-                            <img src="/img/Boli/b01.png" class="img-thumbnail" alt="Imagen 1"
-                                onclick="changeImage(this)">
+                            <img src="/img/Boli/b01.png" class="img-thumbnail" alt="Imagen 1 del Bolígrafo de Bambú" onclick="changeImage(this)">
                         </div>
                         <div class="col-3">
-                            <img src="/img/Boli/b02.png" class="img-thumbnail" alt="Imagen 2"
-                                onclick="changeImage(this)">
+                            <img src="/img/Boli/b02.png" class="img-thumbnail" alt="Imagen 2 del Bolígrafo de Bambú" onclick="changeImage(this)">
                         </div>
                         <div class="col-3">
-                            <img src="/img/Boli/b03.png" class="img-thumbnail" alt="Imagen 3" onclick="changeImage(this)">
+                            <img src="/img/Boli/b03.png" class="img-thumbnail" alt="Imagen 3 del Bolígrafo de Bambú" onclick="changeImage(this)">
                         </div>
                         <div class="col-3">
-                            <img src="/img/boli.png" class="img-thumbnail" alt="Imagen 4" onclick="changeImage(this)">
+                            <img src="/img/boli.png" class="img-thumbnail" alt="Imagen 4 del Bolígrafo de Bambú" onclick="changeImage(this)">
                         </div>
                     </div>
-
-
+    
                 </div>
-
+    
                 <div class="col-md-6 prod-info">
                     <h2 class="fw-bold">Bolígrafo de Bambú</h2>
-                    
+    
                     <p class="text-muted">
                         El Bolígrafo de Bambú es la combinación perfecta de sostenibilidad y estilo. Con su cuerpo hecho de bambú ecológico y su tinta de alta calidad, este bolígrafo ofrece una escritura suave y precisa. Ideal para quienes buscan un producto respetuoso con el medio ambiente sin sacrificar el rendimiento.
                     </p>
-                    
+    
                     <h3>Características:</h3>
                     <ul class="product-features">
                         <li><strong>Material:</strong> Cuerpo de bambú sostenible y ecológico.</li>
@@ -101,24 +98,27 @@
                         <li><strong>Diseño ergonómico:</strong> Empuñadura cómoda que reduce el cansancio en la mano.</li>
                         <li><strong>Recargable:</strong> Puedes reemplazar la recarga de tinta cuando se acabe.</li>
                         <li><strong>Estilo minimalista:</strong> Diseño sencillo y elegante que lo convierte en un accesorio atractivo.</li>
-                    </ul>     
-                                    
+                    </ul>
+    
                     <span class="price text-end">25,99€</span>
+    
                     <div class="d-flex flex-column align-items-end mb-3">
-                        <label for="quantity" class="me-2">Cantidad:</label>
-                        <input type="number" id="quantity" class="form-control w-25" value="1" min="1">
-                
+                        <label for="quantity" class="me-2" aria-label="Cantidad">Cantidad:</label>
+                        <input type="number" id="quantity" class="form-control w-25" value="1" min="1" aria-label="Selecciona la cantidad de bolígrafos">
+    
                         <div class="btn-buy">
-                            <button class="btn btn-success rounded-pill mb-2">Añadir al carrito</button>
-                            <button class="btn btn-outline-secondary rounded-pill mb-2"><i class="bi bi-heart"></i>
-                                Favoritos</button>
+                            <button type="button" class="btn btn-success rounded-pill mb-2">Añadir al carrito</button>
+                            <button type="button" class="btn btn-outline-secondary rounded-pill mb-2">
+                                <i class="bi bi-heart"></i> Favoritos
+                            </button>
                         </div>
                     </div>
                 </div>
-                
+    
             </div>
         </section>
     </main>
+    
 
     <footer>
         <section class="social">
@@ -162,7 +162,8 @@
             <p><i>Eloy Lozano & Dani Sánchez</i></p>
         </section>
     </footer>
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 main>div {
     padding: 0 5em;
@@ -190,7 +192,7 @@ label {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        height: 600px;
+        text-align: justify;
     }
 
     img {
