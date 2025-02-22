@@ -136,6 +136,10 @@ footer {
         transform: scale(1.1);
     }
 
+    .footer-menu{
+        display: flex;
+        justify-content: center;
+    }
     .footer-menu ul {
         list-style: none;
         display: flex;
