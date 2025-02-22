@@ -23,7 +23,7 @@ body {
   }
 }
 
-#home > p {
+#home>p {
   color: var(--medium-green);
 }
 
@@ -689,23 +689,6 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
-  .nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .d-md-flex {
-    display: none !important;
-  }
-
-  .d-flex {
-    justify-content: center;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-  }
 }
 
 @media (max-width: 1068px) {
@@ -725,12 +708,6 @@ footer {
 
   h3 {
     text-align: left;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
   }
 
   #about {
