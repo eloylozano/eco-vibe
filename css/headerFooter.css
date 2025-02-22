@@ -206,9 +206,8 @@ footer {
 @media (max-width: 1000px) {
     .nav {
         flex-direction: column;
-        /* Pone el menú en columna en pantallas pequeñas */
+        align-items: start;
         display: none;
-        /* Lo oculta por defecto */
     }
 
     .nav.active {
@@ -218,6 +217,30 @@ footer {
 
     .hamburger {
         display: block;
+    }
+
+    footer {
+        .social {
+            height: 100%;
+
+            .social ul {
+                height: 100%;
+            }
+
+        }
+
+        .footer-menu ul {
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: row;
+            padding: 0 10px;
+            margin: 5px 0;
+        }
+
+        .description {
+            font-size: 0.8em;
+            height: 75px;
+        }
     }
 }
 

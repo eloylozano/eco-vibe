@@ -290,29 +290,7 @@ label {
         flex-direction: row;
     }
 
-    footer {
-        .social {
-            height: 100%;
-
-            .social ul {
-                height: 100%;
-            }
-
-        }
-
-        .footer-menu ul {
-            font-size: 0.8em;
-            display: flex;
-            flex-direction: row;
-            padding: 0 10px;
-            margin: 5px 0;
-        }
-
-        .description {
-            font-size: 0.8em;
-            height: 75px;
-        }
-    }
+   
 
 
 }
