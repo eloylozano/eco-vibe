@@ -206,7 +206,6 @@ footer {
     display: none;
     cursor: pointer;
 }
-
 @media (max-width: 1000px) {
     .nav {
         flex-direction: column;
