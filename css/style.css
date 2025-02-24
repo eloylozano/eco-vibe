@@ -685,7 +685,7 @@ footer {
 
 @media (max-width: 1100px) {
   body {
-    background-image: url("../img/fullWallpaper.jpg");
+    background-image: url("../img/fullWallpaper.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;

@@ -42,6 +42,8 @@ main {
     width: 400px;
 }
 
+
+
 .form-container {
     width: 50%;
     padding: 40px;
@@ -49,6 +51,10 @@ main {
     display: flex;
     flex-direction: column;
     z-index: 1;
+}
+
+#registerContainer .form-container{
+    width: 100%;
 }
 
 .slider-container {
