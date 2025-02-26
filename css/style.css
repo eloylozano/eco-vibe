@@ -209,6 +209,8 @@ body {
 
 .cards-container {
   width: 100%;
+  justify-content: space-evenly !important;
+
 
   .card {
     cursor: pointer;
