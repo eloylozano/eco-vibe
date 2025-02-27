@@ -32,13 +32,16 @@
 ## 🎨 Estructura del proyecto
 ```
 EcoVibe/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-├── img/
-└── README.md
+├───css
+├───figma
+│   └───mockups
+├───html
+├───img
+│   ├───Boli
+│   ├───Cuaderno
+│   └───Velas
+├───readme
+└───js
 ```
 
 ## 🌟 Contribución
