@@ -17,20 +17,20 @@
     <header class="d-flex justify-content-between align-items-center px-3 px-md-5">
         <nav class="d-flex align-items-center justify-content-between flex-wrap">
             <a href="../index.html" class="d-flex gap-2">
-                <img class="h-" src="/img/logo.webp" alt="Logo de EcoVibe" style="height: 50px;">
+                <img class="h-" src="/img/logo.png" alt="Logo de EcoVibe" style="height: 50px;">
                 <span class="brand-text fs-3"><span>Eco</span>Vibe</span>
             </a>
 
-            <ul class="nav gap-4" role="navigation">
-                <li class="nav-item"><a href="../index.html" tabindex="0" class="nav-link text-dark">Inicio</a></li>
-                <li class="nav-item"><a href="products.html" class="nav-link text-dark active ">Productos</a></li>
-                <li class="nav-item"><a href="categories.html" class="nav-link text-dark">Categorías</a></li>
-                <li class="nav-item"><a href="../index.html#contacto" class="nav-link text-dark">Contacto</a></li>
+            <ul class="nav gap-4">
+                <li class="nav-item"><a href="index.html" class="nav-link text-dark">Inicio</a></li>
+                <li class="nav-item"><a href="/html/products.html" class="nav-link text-dark active">Productos</a></li>
+                <li class="nav-item"><a href="/html/categories.html" class="nav-link text-dark">Categorías</a></li>
+                <li class="nav-item"><a href="index.html#contacto" class="nav-link text-dark">Contacto</a></li>
             </ul>
 
             <div class="d-flex gap-3">
 
-                <a class="btn btn-success rounded-pill" href="login.html">Registro</a>
+                <a class="btn btn-success rounded-pill" href="/html/login.html">Registro</a>
                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 512 512">
                     <circle cx="176" cy="416" r="16" fill="none" stroke="#1a1a1a" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="32" />
@@ -42,7 +42,7 @@
                         d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128" />
                 </svg>
             </div>
-            <div class="hamburger" aria-label="Abrir menú">
+            <div class="hamburger" role="button" tabindex="0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48">
                     <path fill="none" stroke="#252525" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
                         d="M7.95 11.95h32m-32 12h32m-32 12h32" />
@@ -50,6 +50,7 @@
             </div>
         </nav>
     </header>
+
 
 
     <main>
@@ -104,205 +105,209 @@
                 <button type="button" class="apply-filters">Aplicar Filtros</button>
             </aside>
 
-                <section id="cards" class="cards-container p-5">
+            <section id="cards" class="cards-container p-5">
 
-                    <article class="card">
-                        <a href="boligrafo.html" tabindex="0">
-                            <div class="img-container"><img src="/img/boli.webp" class="card-img-top"
-                                    alt="Bolígrafo creado con bambú"></div>
-                            <div class="card-body">
-                                <h5 class="card-title">Bolígrafo de Bambú</h5>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="fw-bold text-success">25,99 €</span>
-                                </div>
-                                <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="agenda.html" tabindex="0">
-                            <div class="img-container"><img src="/img/Libreta.avif" class="card-img-top"
-                                    alt="Agenda ecológica"> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Libreta ecológica</h5>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="fw-bold text-success">8,90 €</span>
-                                </div>
-                                <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="card">
-                        <a href="velas.html" tabindex="0">
-                            <div class="img-container">
-                                <img src="/img/Velas.avif" class="card-img-top" alt="Velas aromáticas ecológicas">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Velas aromáticas ecológicas</h5>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="fw-bold text-success">12,50 €</span>
-                                </div>
-                                <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="card">
-                        <div class="img-container" tabindex="0">
-                            <img src="/img/Botella.webp" class="card-img-top" alt="Botella ecológica">
+                <article class="card">
+                    <a href="boligrafo.html" tabindex="0">
+                        <div class="img-container"><img src="/img/boli.webp" class="card-img-top"
+                                alt="Bolígrafo creado con bambú">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Botella ecológica</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">14,30 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Bolígrafo de Bambú</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">25,99 €</span>
                         </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <a href="agenda.html" tabindex="0">
+                        <div class="img-container"><img src="/img/Libreta.avif" class="card-img-top"
+                                alt="Agenda ecológica">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Libreta ecológica</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">8,90 €</span>
+                        </div>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container" tabindex="0">
-                            <img src="/img/ToteBag.webp" class="card-img-top" alt="Tote Bag con plástico reciclado">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Tote Bag ecológica</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">10,00 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
+                <article class="card">
+                    <a href="velas.html" tabindex="0">
                         <div class="img-container">
-                            <img src="/img/tuper.webp" class="card-img-top" alt="Tupper Ecofriendly">
+                            <img src="/img/Velas.avif" class="card-img-top" alt="Velas aromáticas ecológicas">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Tupper ecológico</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">13,40 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Velas aromáticas ecológicas</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">12,50 €</span>
                         </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/toalla.webp" class="card-img-top" alt="Toallas Ecofriendly">
+                <article class="card">
+                    <div class="img-container" tabindex="0">
+                        <img src="/img/Botella.webp" class="card-img-top" alt="Botella ecológica">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Botella ecológica</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">14,30 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Toallas Ecofriendly</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">33,90 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/plato.webp" class="card-img-top" alt="Plato reciclable y biodegradable">
+                <article class="card">
+                    <div class="img-container" tabindex="0">
+                        <img src="/img/ToteBag.webp" class="card-img-top" alt="Tote Bag con plástico reciclado">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tote Bag ecológica</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">10,00 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Plato reciclado</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">1,99 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/Servilleta.webp" class="card-img-top" alt="Servilletas biodegradables">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Servilletas ecológicas</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">3,90 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/vaso-cafe.webp" class="card-img-top" alt="Vaso de café biodegradable">
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/tuper.webp" class="card-img-top" alt="Tupper Ecofriendly">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tupper ecológico</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">13,40 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Vaso de café ecológico</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">2,50 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/sudadera-ecologica.webp" class="card-img-top" alt="Sudadera con materiales reciclables">
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/toalla.webp" class="card-img-top" alt="Toallas Ecofriendly">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Toallas Ecofriendly</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">33,90 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sudadera ecológica</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">22,00 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/PowerBank.webp" class="card-img-top" alt="PowerBank EcoFriendly">
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/plato.webp" class="card-img-top" alt="Plato reciclable y biodegradable">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Plato reciclado</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">1,99 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">PowerBank ecológico</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">19,99 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/Servilleta.webp" class="card-img-top" alt="Servilletas biodegradables">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Servilletas ecológicas</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">3,90 €</span>
                         </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/vaso-cafe.webp" class="card-img-top" alt="Vaso de café biodegradable">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Vaso de café ecológico</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">2,50 €</span>
+                        </div>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/sudadera-ecologica.webp" class="card-img-top"
+                            alt="Sudadera con materiales reciclables">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sudadera ecológica</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">22,00 €</span>
+                        </div>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/PowerBank.webp" class="card-img-top" alt="PowerBank EcoFriendly">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PowerBank ecológico</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">19,99 €</span>
+                        </div>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
 
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/mousepad.webp" class="card-img-top" alt="Mousepad creado con materiales reciclables">
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/mousepad.webp" class="card-img-top"
+                            alt="Mousepad creado con materiales reciclables">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mousepad</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">11,10 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mousepad</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">11,10 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <img src="/img/palillos.webp" class="card-img-top" alt="Palillos de bambú">
-                        <div class="card-body">
-                            <h5 class="card-title">Palillos de bambú</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">7,20 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                <article class="card">
+                    <img src="/img/palillos.webp" class="card-img-top" alt="Palillos de bambú">
+                    <div class="card-body">
+                        <h5 class="card-title">Palillos de bambú</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">7,20 €</span>
                         </div>
-                    </article>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
 
-                    <article class="card">
-                        <div class="img-container">
-                            <img src="/img/cuboBasura.webp" class="card-img-top" alt="Cubo para el reciclaje">
+                <article class="card">
+                    <div class="img-container">
+                        <img src="/img/cuboBasura.webp" class="card-img-top" alt="Cubo para el reciclaje">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cubo de reciclaje</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-success">23,45 €</span>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cubo de reciclaje</h5>
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="fw-bold text-success">23,45 €</span>
-                            </div>
-                            <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
-                        </div>
-                    </article>
-                </section>
+                        <button class="btn rounded-pill btn_cart w-100">Añadir al carrito</button>
+                    </div>
+                </article>
+            </section>
 
         </div>
         <section>
@@ -315,14 +320,13 @@
             </nav>
         </section>
     </main>
-
     <footer>
         <section class="social">
             <ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24">
                         <path fill="#95bf00"
                             d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
-                    </svg></a></li>
+                    </svg></li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24">
                         <path fill="#95bf00"
                             d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7z" />
@@ -351,15 +355,14 @@
                     <li>|</li>
                     <li><a href="#">Localizaciones</a></li>
                 </ul>
+            </nav>
         </section>
-        </nav>
         <section class="description">
             <p>&copy; 2025 EcoVibe. Todos los derechos reservados.</p>
             <p><i>Eloy Lozano & Dani Sánchez</i></p>
         </section>
     </footer>
-
-    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
