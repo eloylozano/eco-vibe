@@ -384,7 +384,7 @@ body {
       z-index: -1;
     }
 
-    .c-button--gooey .c-button__blobs div {
+    .c-button--gooey .c-button__blobs span {
       background-color: var(--light-blue);
       width: 34%;
       height: 100%;
@@ -394,16 +394,16 @@ body {
       transition: all 700ms ease;
     }
 
-    .c-button--gooey .c-button__blobs div:nth-child(1) {
+    .c-button--gooey .c-button__blobs span:nth-child(1) {
       left: -5%;
     }
 
-    .c-button--gooey .c-button__blobs div:nth-child(2) {
+    .c-button--gooey .c-button__blobs span:nth-child(2) {
       left: 30%;
       transition-delay: 60ms;
     }
 
-    .c-button--gooey .c-button__blobs div:nth-child(3) {
+    .c-button--gooey .c-button__blobs span:nth-child(3) {
       left: 66%;
       transition-delay: 25ms;
     }
@@ -412,7 +412,7 @@ body {
       color: #fff;
     }
 
-    .c-button--gooey:hover .c-button__blobs div {
+    .c-button--gooey:hover .c-button__blobs span {
       transform: scale(1.4) translateY(0) translateZ(0);
     }
   }
